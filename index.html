@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusLens AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🔍 CampusLens <span>AI</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#workspace">Workspace</a>
+
+            <a href="#features">Features</a>
+
+            <a href="#history">History</a>
+
+            <a href="#chat">AI Chat</a>
+
+            <button class="nav-start">
+                Launch AI
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <div class="tagline">
+                ✦ AI-POWERED CAMPUS INTELLIGENCE
+            </div>
+
+            <h1>
+                Understand
+                <span>Every Image.</span>
+            </h1>
+
+            <p class="description">
+                CampusLens AI transforms campus images into
+                meaningful insights using AI vision, text
+                recognition and intelligent visual chat.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="start-btn">
+                    Start Analysis →
+                </button>
+
+                <span class="hero-note">
+                    ⚡ Vision • OCR • AI Chat
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             UPLOAD CARD
+        ========================== -->
+
+        <div class="upload-card" id="uploadCard">
+
+            <div class="upload-top">
+
+                <span class="status-dot"></span>
+
+                AI Vision Ready
+
+            </div>
+
+
+            <div class="upload-icon">
+                📸
+            </div>
+
+
+            <h2>
+                Analyze an Image
+            </h2>
+
+
+            <p>
+                Upload your campus photo,
+                laboratory image, notice board,
+                equipment or study material.
+            </p>
+
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+                hidden
+            >
+
+
+            <button
+                type="button"
+                class="upload-btn"
+                id="uploadBtn"
+            >
+                📁 Upload Image
+            </button>
+
+
+            <img
+                id="imagePreview"
+                class="image-preview"
+                alt="Selected image"
+            >
+
+
+            <button
+                type="button"
+                class="analyze-btn"
+                id="analyzeBtn"
+            >
+                🔍 Analyze Image
+            </button>
+
+
+            <button
+                type="button"
+                class="reset-btn"
+                id="resetBtn"
+            >
+                🔄 Try Another Image
+            </button>
+
+
+            <small>
+                PNG, JPG • Maximum 10MB
+            </small>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         STATS
+    ========================== -->
+
+    <section class="stats-bar">
+
+        <div class="stat">
+
+            <strong>01</strong>
+
+            <span>
+                Upload
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>02</strong>
+
+            <span>
+                Analyze
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>03</strong>
+
+            <span>
+                Understand
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>04</strong>
+
+            <span>
+                Ask AI
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FEATURES
+    ========================== -->
+
+    <section
+        class="features-section"
+        id="features"
+    >
+
+        <div class="section-heading">
+
+            <span>
+                POWERFUL FEATURES
+            </span>
+
+            <h2>
+                One Image.
+                <br>
+                <strong>Multiple Insights.</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="features">
+
+
+            <div class="feature-card">
+
+                <div class="feature-number">
+                    01
+                </div>
+
+                <div class="feature-icon">
+                    👁️
+                </div>
+
+                <h3>
+                    Vision Analysis
+                </h3>
+
+                <p>
+                    Understand objects, scenes and
+                    visual information in your image.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <div class="feature-number">
+                    02
+                </div>
+
+                <div class="feature-icon">
+                    📝
+                </div>
+
+                <h3>
+                    Smart OCR
+                </h3>
+
+                <p>
+                    Detect and understand visible text
+                    from notices and documents.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <div class="feature-number">
+                    03
+                </div>
+
+                <div class="feature-icon">
+                    💬
+                </div>
+
+                <h3>
+                    Visual Chat
+                </h3>
+
+                <p>
+                    Ask natural questions about the
+                    uploaded image and get AI answers.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <div class="feature-number">
+                    04
+                </div>
+
+                <div class="feature-icon">
+                    📚
+                </div>
+
+                <h3>
+                    Student Insights
+                </h3>
+
+                <p>
+                    Convert visual information into
+                    simple, useful student explanations.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         WORKSPACE
+    ========================== -->
+
+    <section
+        class="workspace"
+        id="workspace"
+    >
+
+        <div class="workspace-header">
+
+            <div>
+
+                <span>
+                    AI WORKSPACE
+                </span>
+
+                <h2>
+                    Visual Intelligence Lab
+                </h2>
+
+            </div>
+
+
+            <div class="workspace-status">
+                ● System Ready
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             RESULT
+        ========================== -->
+
+        <div
+            class="result-box"
+            id="resultBox"
+            style="display: none;"
+        >
+
+            <div class="result-header">
+
+                <div>
+
+                    <span>
+                        ANALYSIS COMPLETE
+                    </span>
+
+                    <h2>
+                        🧠 AI Vision Analysis
+                    </h2>
+
+                </div>
+
+                <div class="result-badge">
+                    AI
+                </div>
+
+            </div>
+
+
+
+            <div class="dashboard-grid">
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        📸
+                    </div>
+
+                    <h3>
+                        Scene
+                    </h3>
+
+                    <p>
+                        AI scene analysis.
+                    </p>
+
+                </div>
+
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        👁️
+                    </div>
+
+                    <h3>
+                        Objects
+                    </h3>
+
+                    <p>
+                        Detected visual objects.
+                    </p>
+
+                </div>
+
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        📝
+                    </div>
+
+                    <h3>
+                        Text
+                    </h3>
+
+                    <p>
+                        Visible text information.
+                    </p>
+
+                </div>
+
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        ⚠️
+                    </div>
+
+                    <h3>
+                        Safety
+                    </h3>
+
+                    <p>
+                        Visible safety observations.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="result-content"
+                id="resultContent"
+            >
+                Your AI analysis will appear here.
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             AI CHAT
+        ========================== -->
+
+        <div
+            class="chat-box"
+            id="chat"
+        >
+
+            <div class="chat-heading">
+
+                <div class="chat-avatar">
+                    🤖
+                </div>
+
+                <div>
+
+                    <span>
+                        CAMPUSLENS ASSISTANT
+                    </span>
+
+                    <h2>
+                        Ask anything about your image
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK QUESTIONS -->
+
+            <div class="quick-questions">
+
+                <button
+                    class="quick-btn"
+                    data-question="What is written in this image?"
+                >
+                    📝 Read Text
+                </button>
+
+
+                <button
+                    class="quick-btn"
+                    data-question="What is shown in this image?"
+                >
+                    👁️ What's Here?
+                </button>
+
+
+                <button
+                    class="quick-btn"
+                    data-question="Explain this image in simple words."
+                >
+                    🧠 Explain
+                </button>
+
+
+                <button
+                    class="quick-btn"
+                    data-question="Are there any visible safety concerns?"
+                >
+                    ⚠️ Safety Check
+                </button>
+
+
+                <button
+                    class="quick-btn"
+                    data-question="Explain this for a college student."
+                >
+                    📚 Student View
+                </button>
+
+            </div>
+
+
+
+            <div class="chat-input-area">
+
+                <input
+                    type="text"
+                    id="questionInput"
+                    placeholder="Ask something about your image..."
+                >
+
+
+                <button id="askBtn">
+                    Ask AI →
+                </button>
+
+            </div>
+
+
+
+            <div id="chatAnswer">
+
+                <div class="ai-message">
+                    🤖 Upload an image and ask me
+                    anything about it.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         HISTORY
+    ========================== -->
+
+    <section
+        class="history-section"
+        id="history"
+    >
+
+        <div class="section-heading">
+
+            <span>
+                ANALYSIS HISTORY
+            </span>
+
+            <h2>
+                Your Recent
+                <strong>Analyses</strong>
+            </h2>
+
+        </div>
+
+
+        <div
+            class="history-list"
+            id="historyList"
+        >
+
+            <div class="empty-history">
+
+                🕘 No analysis history yet.
+
+                <br>
+
+                Analyze an image to see it here.
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🔍 CampusLens AI
+        </div>
+
+        <p>
+            See. Understand. Ask.
+        </p>
+
+        <span>
+            Built for smarter campus experiences.
+        </span>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
